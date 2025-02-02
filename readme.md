@@ -27,10 +27,11 @@ export PATH=$SPARK_HOME:$PATH
 ```
 cd dataset
 pyenv virtualenv big-data
+pyenv activate big-data
 pip install pyspark
 cp ~/Downloads/archive.zip .
 unzip archive.zip
-mv archive.csv steam_reviews.csv
+mv dataset.csv steam_reviews.csv
 rm archive.zip
 cd ..
 
