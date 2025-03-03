@@ -9,12 +9,12 @@ df.show(5)
 df.printSchema()
 
 
-reviews_score_1 = df.filter(df.review_score == 1).select("review_text").limit(5)
+reviews_score_good = df.filter(df.review_score == 1).select("review_text").limit(5)
 print("review_score = 1:")
-reviews_score_1.show(truncate=False)
+reviews_score_good.show(truncate=False)
 
 
-reviews_score_0 = df.filter(df.review_score == 0).select("review_text").limit(5)
-print("review_score = 0:")
-reviews_score_0.show(truncate=False)
+reviews_score_bad = df.filter(df.review_score == -1).select("review_text").limit(5)
+print("review_score = -1:")
+reviews_score_bad.show(truncate=False)
 
