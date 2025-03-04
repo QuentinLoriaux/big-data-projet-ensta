@@ -5,7 +5,7 @@ spark = SparkSession.builder.appName("Swear").getOrCreate()
 ## A OPTIMISER
 
 comm = spark.read.csv("../dataset/steam_reviews.csv", header=True, inferSchema=True)
-with open("../dataset/swearWords.txt", "r") as f:
+with open("../dataset/bad-words.txt", "r") as f:
     swear = [line.strip() for line in f.readlines()]
 swear_broadcast = spark.sparkContext.broadcast(swear)
 
@@ -29,8 +29,8 @@ res2 = 100*count_negative["count2"]/sum[1]
 
 count_total = count_positive.join(count_negative, count_positive.word_good == count_negative.word_bad, how="outer").select(
     count_positive.word_good.alias("word"),
-    (res1).alias("count_positive"),
-    (res2).alias("count_negative"),
+    res1.alias("count_positive"),
+    res2.alias("count_negative"),
     (res2/res1).alias("compare")
-).filter(col("compare").isNotNull()).orderBy(col("compare").asc())
+).filter(col("compare").isNotNull()).orderBy(col("compare").desc())
 count_total.show()
