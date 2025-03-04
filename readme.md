@@ -1,6 +1,9 @@
 # Projet Big-Data ENSTA Paris 2025
 
-Dataset : [Steam reviews](https://www.kaggle.com/datasets/andrewmvd/steam-reviews)
+Datasets :
+- [Steam reviews](https://www.kaggle.com/datasets/andrewmvd/steam-reviews)
+- [users](https://www.kaggle.com/datasets/bossadapt/public-steam-users-reviews-games-and-friends)
+- [swearWords.txt](http://www.bannedwordlist.com/lists/swearWords.txt)
 
 Auteurs :
 - Quentin Loriaux

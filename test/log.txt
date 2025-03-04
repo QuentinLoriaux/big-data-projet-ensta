@@ -1,0 +1,692 @@
+25/03/04 17:48:08 WARN Utils: Your hostname, kali resolves to a loopback address: 127.0.1.1; using 172.16.4.174 instead (on interface wlan0)
+25/03/04 17:48:08 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+25/03/04 17:48:09 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[Stage 1:>                                                         (0 + 8) / 17][Stage 1:====================>                                     (6 + 8) / 17][Stage 1:===========================>                              (8 + 8) / 17][Stage 1:====================================>                    (11 + 6) / 17][Stage 1:=====================================================>   (16 + 1) / 17]                                                                                [Stage 2:>                                                         (0 + 8) / 17]25/03/04 17:48:17 ERROR Executor: Exception in task 6.0 in stage 2.0 (TID 24)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+25/03/04 17:48:17 ERROR TaskSetManager: Task 6 in stage 2.0 failed 1 times; aborting job
+25/03/04 17:48:17 ERROR Executor: Exception in task 3.0 in stage 2.0 (TID 21)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+25/03/04 17:48:17 ERROR Executor: Exception in task 5.0 in stage 2.0 (TID 23)
+org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 0.0 in stage 2.0 (TID 18) (172.16.4.174 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 1.0 in stage 2.0 (TID 19) (172.16.4.174 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 2.0 in stage 2.0 (TID 20) (172.16.4.174 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 4.0 in stage 2.0 (TID 22) (172.16.4.174 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 7.0 in stage 2.0 (TID 25) (172.16.4.174 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:)
+25/03/04 17:48:17 WARN TaskSetManager: Lost task 8.0 in stage 2.0 (TID 26) (172.16.4.174 executor driver): TaskKilled (Stage cancelled: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:)
+Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 31, in <module>
+    swear_df = spark.createDataFrame(rdd_word_counts, ["word", "count"]).orderBy("count", ascending=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/sql/session.py", line 1443, in createDataFrame
+    return self._create_dataframe(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/sql/session.py", line 1483, in _create_dataframe
+    rdd, struct = self._createFromRDD(data.map(prepare), schema, samplingRatio)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/sql/session.py", line 1056, in _createFromRDD
+    struct = self._inferSchema(rdd, samplingRatio, names=schema)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/sql/session.py", line 996, in _inferSchema
+    first = rdd.first()
+            ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 2888, in first
+    rs = self.take(1)
+         ^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 2855, in take
+    res = self.context.runJob(self, takeUpToNumLeft, p)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/context.py", line 2510, in runJob
+    sock_info = self._jvm.PythonRDD.runJob(self._jsc.sc(), mappedRDD._jrdd, partitions)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+                   ^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+    return f(*a, **kw)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.runJob.
+: org.apache.spark.SparkException: Job aborted due to stage failure: Task 6 in stage 2.0 failed 1 times, most recent failure: Lost task 6.0 in stage 2.0 (TID 24) (172.16.4.174 executor driver): org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+	at org.apache.spark.api.python.PythonRDD$.runJob(PythonRDD.scala:181)
+	at org.apache.spark.api.python.PythonRDD.runJob(PythonRDD.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:75)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:52)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.apache.spark.api.python.PythonException: Traceback (most recent call last):
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1247, in main
+    process()
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/worker.py", line 1237, in process
+    out_iter = func(split_index, iterator)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 5434, in pipeline_func
+    return func(split, prev_func(split, iterator))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 840, in func
+    return f(iterator)
+           ^^^^^^^^^^^
+  File "/home/jerome/.pyenv/versions/big-data/lib/python3.12/site-packages/pyspark/rdd.py", line 3983, in combineLocally
+    merger.mergeValues(iterator)
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/shuffle.py", line 256, in mergeValues
+    for k, v in iterator:
+                ^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/spark-3.5.4-bin-hadoop3/python/lib/pyspark.zip/pyspark/util.py", line 83, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/jerome/cours/3A/Big_Data/projet/big-data-projet-ensta/test/rank_insultes2.py", line 24, in <lambda>
+    rdd_tokens = rdd.flatMap(lambda text: text.lower().split())  # Tokenization
+                                          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.handlePythonException(PythonRunner.scala:572)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:784)
+	at org.apache.spark.api.python.PythonRunner$$anon$3.read(PythonRunner.scala:766)
+	at org.apache.spark.api.python.BasePythonRunner$ReaderIterator.hasNext(PythonRunner.scala:525)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$GroupedIterator.fill(Iterator.scala:1211)
+	at scala.collection.Iterator$GroupedIterator.hasNext(Iterator.scala:1217)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.shuffle.sort.BypassMergeSortShuffleWriter.write(BypassMergeSortShuffleWriter.java:140)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	... 1 more
+
