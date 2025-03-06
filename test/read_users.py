@@ -3,8 +3,8 @@ from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.appName("SQLiteReader").getOrCreate()
 
+# Ouverture, traitement du fichier SQLite
 sqlite_db_path = "../dataset/users"
-
 conn = sqlite3.connect(sqlite_db_path)
 cursor = conn.cursor()
 
@@ -19,7 +19,7 @@ data = cursor.fetchall()
 
 conn.close()
 
+# Création du DataFrame
 df_spark = spark.createDataFrame(data, schema=columns)
-
 df_spark.show()
 

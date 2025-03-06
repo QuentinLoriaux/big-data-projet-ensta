@@ -1,12 +1,8 @@
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder \
-    .appName("Steam reviews") \
-    .getOrCreate()
+spark = SparkSession.builder.appName("Steam reviews").getOrCreate()
 
-print(spark.version)
-
-df = spark.read.csv("../dataset/users.csv", header=True, inferSchema=True)
-df.show(5)
+df = spark.read.csv("../dataset/steam_reviews.csv", header=True, inferSchema=True)
 df.printSchema()
+df.show(5)
 
