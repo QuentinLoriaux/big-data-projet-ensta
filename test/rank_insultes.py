@@ -5,6 +5,9 @@ spark = SparkSession.builder.appName("Swear").getOrCreate()
 
 
 ## Version non optimisée pour comparer
+
+## temps ~ 25 sec
+
 start_time = time.time()
 
 df = spark.read.csv("../dataset/steam_reviews.csv", header=True, inferSchema=True)

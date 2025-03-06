@@ -31,6 +31,6 @@ count_total = count_positive.join(count_negative, count_positive.word_good == co
     count_positive.word_good.alias("word"),
     res1.alias("count_positive"),
     res2.alias("count_negative"),
-    (res2/res1).alias("compare")
+    (res1/res2).alias("compare")
 ).filter(col("compare").isNotNull()).orderBy(col("compare").desc())
 count_total.show()

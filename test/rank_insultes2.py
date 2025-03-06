@@ -3,7 +3,10 @@ from pyspark.sql.functions import col
 import time
 spark = SparkSession.builder.appName("SwearWordCount").getOrCreate()
 
-# Version optimisée
+## Version optimisée mais plus lente
+
+## temps ~ 50 sec
+
 start_time = time.time()
 
 df = spark.read.csv("../dataset/steam_reviews.csv", header=True, inferSchema=True)
