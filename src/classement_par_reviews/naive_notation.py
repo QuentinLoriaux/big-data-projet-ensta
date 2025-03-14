@@ -11,7 +11,7 @@ word_count_df = df.groupBy("app_name").agg(
     spark_sum((col("review_score") == 1).cast("int") * col("word_count")).alias("positive_word_count"),
     spark_sum((col("review_score") == -1).cast("int") * col("word_count")).alias("negative_word_count")
 )
-word_count_df = word_count_df.withColumn("final_count", col("positive_word_count") - col("negative_word_count"))
+word_count_df = word_count_df.withColumn("final_count", col("positive_word_count") / col("negative_word_count"))
 sorted_games = word_count_df.orderBy(col("final_count").desc())
 end_time = time.time()
 
