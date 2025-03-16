@@ -1,0 +1,6 @@
+setup.py
+big_data_projet_ensta.egg-info/PKG-INFO
+big_data_projet_ensta.egg-info/SOURCES.txt
+big_data_projet_ensta.egg-info/dependency_links.txt
+big_data_projet_ensta.egg-info/requires.txt
+big_data_projet_ensta.egg-info/top_level.txt
