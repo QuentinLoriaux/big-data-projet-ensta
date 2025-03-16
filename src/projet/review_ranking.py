@@ -12,18 +12,21 @@ def naive_notation(ext="parquet"):
     else:
         df = spark.read.csv("../../dataset/steam_reviews.csv", header=True, inferSchema=True)
 
-    count_df = df.groupBy("app_name").agg(
+    # df.unpersist()
+    
+
+    df = df.groupBy("app_name").agg(
     spark_sum((col("review_score").cast("int"))).alias("total_score_count"),
     )
     
-    return count_df.orderBy(col("total_score_count").desc())
+    return df.orderBy(col("total_score_count").desc())
 
 
 
 
 def token_aware_notation(ext="parquet"):
 
-    spark = SparkSession.builder.appName("notation").config("spark.driver.memory", "4g").config("spark.executor.memory", "4g").getOrCreate()
+    spark = SparkSession.builder.appName("notation").getOrCreate()
 
     if ext == "parquet":
         df = spark.read.parquet("../../dataset/steam_reviews.parquet")
@@ -52,6 +55,16 @@ if __name__ == "__main__":
             filetype = "csv"
     
 
-    # benchmark(lambda: naive_notation(filetype))
+    benchmark(lambda: naive_notation(filetype), setSpark=True)
+    benchmark(lambda: naive_notation(filetype), setSpark=False)
+    benchmark(lambda: naive_notation(filetype), setSpark=False)
+    benchmark(lambda: naive_notation(filetype), setSpark=False)
+    benchmark(lambda: naive_notation(filetype), setSpark=False)
+    benchmark(lambda: naive_notation(filetype), setSpark=False)
+    benchmark(lambda: naive_notation(filetype))
+    benchmark(lambda: naive_notation(filetype))
+    benchmark(lambda: naive_notation(filetype))
+
+    benchmark(lambda: token_aware_notation(filetype))
     benchmark(lambda: token_aware_notation(filetype))
 

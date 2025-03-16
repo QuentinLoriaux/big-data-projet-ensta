@@ -1,3 +1,18 @@
+Metadata-Version: 2.2
+Name: big-data-projet-ensta
+Version: 0.1
+Summary: Outils pour l'analyse de reviews et système de recommandation de jeux
+Home-page: https://github.com/QuentinLoriaux/big-data-projet-ensta
+Author: Quentin Loriaux, Jérome Farges
+Description-Content-Type: text/markdown
+Requires-Dist: pyspark
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
 # Projet Big-Data ENSTA Paris 2025
 
 Datasets :
@@ -30,7 +45,7 @@ export PATH=$SPARK_HOME:$PATH
 ```
 pyenv virtualenv big-data-project
 pyenv activate big-data-project
-pip install -e .
+pip install -e
 cd dataset
 cp ~/Downloads/archive.zip .
 unzip archive.zip
