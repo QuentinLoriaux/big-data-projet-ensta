@@ -51,6 +51,21 @@ python insult_ranking.py parquet
 
 - Pour exécuter des tests généraux avec prompts : lancer `python ./src/main.py`
 
+## Expériences
+
+- Classement des jeux selon les reviews
+    - Calcul de la différence entre le nombre d'avis positifs et négatifs
+    - Calcul de la différence entre le nombre de mots total des avis positifs et négatifs
+
+- Classement des insultes les plus fréquentes dans les reviews
+    - Approche avec PySpark
+    - Approche avec MapReduce
+
+- Création d'un système de recommandation à partir des utilisateurs
+    - Etablissement d'un score de recommandation global des jeux : $ \text{score} = \text{total\_recommandations} \times \log(1 + \text{total\_heures\_jouees}) $
+    - todo
+
+
 ## Résultats
 
 Creation de la session spark : 2.2s.
@@ -79,11 +94,13 @@ map reduce insult (sans cache)
 map reduce insult (cache)
 
 
-Autre tableau (une seule colonne)
-naive recsys (sans cache)
-naive recsys (cache)
-better recsys (sans cache)
-better recsys (cache)
+On prend soin de vider autant que possible la mémoire pour ne pas crash pour les recommandations
+
+Autre tableau
+                            batch size = 10 000, partition_nb = 10          batch size = ?, partition_nb = ?
+global recsys 
+user_specific recsys
+user_specific recsys
 
 
 ### Interprétations
