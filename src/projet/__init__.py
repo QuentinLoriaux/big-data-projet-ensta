@@ -13,7 +13,7 @@ def benchmark(function, show=True, setSpark=True):
     result = function()
     end_time = time.time()
 
-    if show:
+    if show and result:
         result.show()
 
     if setSpark:

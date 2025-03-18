@@ -63,7 +63,7 @@ python insult_ranking.py parquet
 
 - Création d'un système de recommandation à partir des utilisateurs
     - Etablissement d'un score de recommandation global des jeux : $ \text{score} = \text{total\_recommandations} \times \log(1 + \text{total\_heures\_jouees}) $
-    - todo
+    - Etablissement d'un classement des 3 jeux les plus fréquents chez les amis d'un utilisateur.
 
 
 ## Résultats
@@ -100,7 +100,9 @@ Autre tableau
                             batch size = 10 000, partition_nb = 10          batch size = ?, partition_nb = ?
 global recsys 
 user_specific recsys
-user_specific recsys
+
+
+
 
 
 ### Interprétations
