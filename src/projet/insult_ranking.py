@@ -55,13 +55,13 @@ if __name__ == "__main__":
     from __init__ import benchmark
 
     filetype = "parquet"
-    if len(sys.argv) < 2:
-        print("Usage: python script.py <csv|parquet>\n Defaulting to parquet")
+    if len(sys.argv) < 3:
+        print("Usage: python script.py <csv|parquet> <map_reduce|spark>\n Defaulting to parquet spark")
     else :
         if sys.argv[1] == "csv":
             filetype = "csv"
-    
-
-    benchmark(lambda: map_reduce_insult(filetype))
-    # benchmark(lambda: spark_insult(filetype))
+        if sys.argv[2] == "map_reduce":
+            benchmark(lambda: map_reduce_insult(filetype))
+        else:
+            benchmark(lambda: spark_insult(filetype))
 

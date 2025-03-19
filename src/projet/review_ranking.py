@@ -48,23 +48,26 @@ if __name__ == "__main__":
     from __init__ import benchmark
 
     filetype = "parquet"
-    if len(sys.argv) < 2:
-        print("Usage: python script.py <csv|parquet>\n Defaulting to parquet")
+    if len(sys.argv) < 3:
+        print("Usage: python script.py <csv|parquet> <naive|token>\n Defaulting to parquet token aware")
     else :
         if sys.argv[1] == "csv":
             filetype = "csv"
-    
+        if sys.argv[2] == "naive":
+            benchmark(lambda: naive_notation(filetype))
+        else:
+            benchmark(lambda: token_aware_notation(filetype))
 
-    benchmark(lambda: naive_notation(filetype), setSpark=True)
-    benchmark(lambda: naive_notation(filetype), setSpark=False)
-    benchmark(lambda: naive_notation(filetype), setSpark=False)
-    benchmark(lambda: naive_notation(filetype), setSpark=False)
-    benchmark(lambda: naive_notation(filetype), setSpark=False)
-    benchmark(lambda: naive_notation(filetype), setSpark=False)
-    benchmark(lambda: naive_notation(filetype))
-    benchmark(lambda: naive_notation(filetype))
-    benchmark(lambda: naive_notation(filetype))
+    # benchmark(lambda: naive_notation(filetype), setSpark=True)
+    # benchmark(lambda: naive_notation(filetype), setSpark=False)
+    # benchmark(lambda: naive_notation(filetype), setSpark=False)
+    # benchmark(lambda: naive_notation(filetype), setSpark=False)
+    # benchmark(lambda: naive_notation(filetype), setSpark=False)
+    # benchmark(lambda: naive_notation(filetype), setSpark=False)
+    # benchmark(lambda: naive_notation(filetype))
+    # benchmark(lambda: naive_notation(filetype))
+    # benchmark(lambda: naive_notation(filetype))
 
-    benchmark(lambda: token_aware_notation(filetype))
-    benchmark(lambda: token_aware_notation(filetype))
+    # benchmark(lambda: token_aware_notation(filetype))
+    # benchmark(lambda: token_aware_notation(filetype))
 
