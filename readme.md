@@ -84,15 +84,15 @@ Firmware Version: F.32
 Durée exacte de créer sparksession
 Faire un tableau
                                     Parquet         CSV
-naive notation (sans cache)  
+naive notation (sans cache)  ~2s  ~7s
 naive notation (Cache)
-token aware notation (sans cache)
+token aware notation (sans cache) ~ 2s ~ 7s
 token aware notation (cache)
+(décroit énormément quand fait deux fois d'affilé, ~ 0.1 - 0.2s / ~3.5s  pour la deuxième)
 
-
-spark insult (sans cache)
+spark insult (sans cache) ~2s ~ 7s
 spark insult (cache)
-map reduce insult (sans cache)
+map reduce insult (sans cache) ~46s ~52s
 map reduce insult (cache)
 
 

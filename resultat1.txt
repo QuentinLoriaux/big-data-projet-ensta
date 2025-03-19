@@ -1,0 +1,4334 @@
+Benchmarking insult_ranking.py
+spark
+parquet
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9435 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0248 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9749 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9709 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0250 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0180 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0230 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9715 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9493 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0259 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9794 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9641 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9844 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9418 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9969 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9818 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0224 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9946 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 2.0205 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 1.9768 seconds
+csv
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6895 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 8.0872 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.3403 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.5318 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.7625 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6331 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.3998 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 8.1806 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6548 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6953 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.5468 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.5919 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6057 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6941 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.9227 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6028 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6440 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.6435 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.5418 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6944|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 7.5964 seconds
+map_reduce
+parquet
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8890 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.1510 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.3041 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.1744 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.2264 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.5748 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.9789 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8503 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.5053 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.7736 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.9773 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.1064 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.9212 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8069 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.7295 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8437 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8543 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 49.0950 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8764 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 48.8786 seconds
+csv
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.4006 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.2534 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.9147 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 54.9832 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 56.1814 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.1946 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.2800 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.3698 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 56.1654 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.1049 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 56.0353 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.1033 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.8026 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.8075 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 56.0738 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.5247 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.7431 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.6909 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 55.2876 seconds
++------+-----+
+|  word|count|
++------+-----+
+|  hell|70388|
+|  damn|54115|
+|  crap|31567|
+|bloody|14320|
+|   wtf| 9928|
+| balls| 9918|
+|   sex| 7601|
+|   omg| 6945|
+|  butt| 6224|
+|  poop| 4500|
+|  jerk| 1857|
+|  turd| 1443|
+|  lmao| 1393|
+|   bum|  960|
+| boner|  855|
+|  anal|  839|
+|  boob|  711|
+|  shit|  609|
+|  wank|  456|
+| prick|  419|
++------+-----+
+only showing top 20 rows
+
+Operation took 54.9680 seconds
+Benchmarking review_ranking.py
+token aware
+parquet
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9987 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 2.1438 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9828 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9688 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9674 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9925 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 2.0177 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9927 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 2.0190 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9863 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9078 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9413 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9930 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9827 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9599 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9814 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9394 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9758 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9923 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 1.9159 seconds
+csv
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.9520 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 8.1902 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.8985 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.4858 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6504 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.7217 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6416 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.5243 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.4298 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.7494 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6731 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6007 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.7757 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6346 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6078 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.4258 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.6074 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 8.0879 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.5838 seconds
++--------------------+-------------------+-------------------+-----------+
+|            app_name|positive_word_count|negative_word_count|final_count|
++--------------------+-------------------+-------------------+-----------+
+|            Terraria|            3754539|             162699|    3591840|
+|           Undertale|            3363892|             312978|    3050914|
+|                NULL|            7271144|            4223334|    3047810|
+|The Witcher 3: Wi...|            2238335|             229998|    2008337|
+|            Warframe|            2556067|             599495|    1956572|
+|       Rocket League|            1973861|             234693|    1739168|
+|  Fallout: New Vegas|            1832262|             142168|    1690094|
+|DARK SOULS™: Prep...|            1835739|             330102|    1505637|
+|        No Man's Sky|            2430463|             959348|    1471115|
+|   BioShock Infinite|            1729833|             270394|    1459439|
+|Mount & Blade: Wa...|            1495162|              71383|    1423779|
+|       Left 4 Dead 2|            1673568|             256483|    1417085|
+|                DOOM|            1664705|             297259|    1367446|
+|            Portal 2|            1376801|              37013|    1339788|
+|         Tomb Raider|            1507237|             189916|    1317321|
+|Middle-earth™: Sh...|            1521893|             216212|    1305681|
+|              Dota 2|            1879490|             625265|    1254225|
+|FTL: Faster Than ...|            1324644|              85137|    1239507|
+|          Insurgency|            1388324|             166775|    1221549|
+|              Arma 3|            1565126|             361426|    1203700|
++--------------------+-------------------+-------------------+-----------+
+only showing top 20 rows
+
+Operation took 7.3477 seconds
+naive
+parquet
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9216 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9156 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9478 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8840 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9289 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9079 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8805 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9562 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9083 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9333 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9096 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8682 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9341 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8783 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8725 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8700 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9166 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8544 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.9246 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 1.8900 seconds
+csv
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.6037 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.4894 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5027 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.6079 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.6179 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5124 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.6426 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5621 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.4881 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.4399 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5973 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.3931 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5120 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.4883 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.4349 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5137 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.6187 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5030 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.5496 seconds
++--------------------+-----------------+
+|            app_name|total_score_count|
++--------------------+-----------------+
+|            Terraria|            79872|
+|                NULL|            72985|
+|              Dota 2|            52302|
+|       Rocket League|            48012|
+|           Undertale|            47782|
+|                Rust|            45027|
+|       Left 4 Dead 2|            43384|
+|            Warframe|            39265|
+|            Portal 2|            37972|
+|            PAYDAY 2|            34561|
+|           Starbound|            31126|
+|  Fallout: New Vegas|            30085|
+|The Witcher 3: Wi...|            29837|
+|     Space Engineers|            29277|
+|                DayZ|            28844|
+|   BioShock Infinite|            27494|
+|Kerbal Space Program|            25228|
+|              Arma 3|            25108|
+|Mount & Blade: Wa...|            25077|
+|          The Forest|            25034|
++--------------------+-----------------+
+only showing top 20 rows
+
+Operation took 7.7087 seconds
