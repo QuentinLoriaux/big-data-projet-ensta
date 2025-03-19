@@ -62,7 +62,9 @@ lecture du fichier : partie la plus longue (2s pour parquet, 6s pour CSV)
 df.unpersist() => les operations suivantes devraient moins exploiter le cache mais visiblement, le fichier est toujours en memoire a cause du cache systeme (4s => 0.1s)
 
 Les specs de la machine utilisée:
-
+Kernel : Linux 6.12.13-amd64
+Architecture: x86-64
+Firmware Version: F.32
 
 Durée exacte de créer sparksession
 Faire un tableau
