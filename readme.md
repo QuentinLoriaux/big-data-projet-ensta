@@ -9,6 +9,13 @@ Auteurs :
 - Quentin Loriaux
 - Jérome Farges
 
+## Objectif du projet
+
+Ce projet est une étude de bases de données de la plateforme steam. On va ici extraire trois résultats :
+- La liste des jeux les plus populaires
+- La liste des insultes les plus populaires dans les revues de jeu
+- Créer des recommandations de jeux pour les utilisateurs
+
 ## Installation
 
 - Installer [Spark](https://dlcdn.apache.org/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz) :
