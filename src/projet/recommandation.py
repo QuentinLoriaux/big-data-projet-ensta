@@ -25,7 +25,7 @@ def popularity_ranking(batch_size=10_000, partition_number=10):
     ])
     )
 
-    spark = SparkSession.builder.appName("recommendation")\
+    spark = SparkSession.builder.appName("recommandation")\
         .config("spark.driver.memory", "4g")\
         .config("spark.executor.memory", "4g")\
         .getOrCreate()
@@ -63,7 +63,7 @@ def popularity_ranking(batch_size=10_000, partition_number=10):
 
         # Calcul du score de popularité pondéré
         df = df.groupBy("appid").agg(
-            spark_sum("is_recommended").alias("total_recommendations"),
+            spark_sum("is_recommended").alias("total_recommandations"),
             spark_sum("playtime_forever").alias("total_playtime")
         )
 
@@ -71,7 +71,7 @@ def popularity_ranking(batch_size=10_000, partition_number=10):
             df_final = df
         else:
             df_final = df_final.union(df).groupBy("appid").agg(
-                spark_sum("total_recommendations").alias("total_recommendations"),
+                spark_sum("total_recommandations").alias("total_recommandations"),
                 spark_sum("total_playtime").alias("total_playtime")
             ).repartition(partition_number).checkpoint(eager=True) # On libère la mémoire des batchs utilisés pour ne conserver que le résultat
         
@@ -81,7 +81,7 @@ def popularity_ranking(batch_size=10_000, partition_number=10):
 
 
     df_final = df_final.withColumn(
-        "score", col("total_recommendations") * log1p(col("total_playtime"))
+        "score", col("total_recommandations") * log1p(col("total_playtime"))
     )
 
     # jointure pour retrouver le nom des jeux
@@ -97,7 +97,7 @@ def popularity_ranking(batch_size=10_000, partition_number=10):
 
 
 
-def user_specific_recommendation(batch_size=500, partition_number=200):
+def user_specific_recommandation(batch_size=500, partition_number=200):
 
     """
     batch_size: Taille du batch
@@ -152,7 +152,7 @@ def user_specific_recommendation(batch_size=500, partition_number=200):
         # Créer une vue temporaire faire des requêtes SQL
         df_exploded.createOrReplaceTempView("user_games")
 
-        recommendations = []
+        recommandations = []
         friends_games_df = None
 
         for row in df.collect():
@@ -167,8 +167,8 @@ def user_specific_recommendation(batch_size=500, partition_number=200):
             
             sorted_games = sorted(game_counts.items(), key=lambda x: x[1], reverse=True)
             recommended_games = [appid for appid, _ in sorted_games[:3]]
-            recommendations.append((steamID, recommended_games))
-            print(f"Recommendations for {steamID}: {recommended_games}")
+            recommandations.append((steamID, recommended_games))
+            print(f"recommandations for {steamID}: {recommended_games}")
 
         # Libération de la mémoire
         df.unpersist()
@@ -178,18 +178,18 @@ def user_specific_recommendation(batch_size=500, partition_number=200):
         spark.sparkContext.getOrCreate()._jvm.System.gc() 
 
         # Insérer ou mettre à jour les recommandations dans la nouvelle bdd
-        connl = sqlite3.connect("../../dataset/recommendations.db")
+        connl = sqlite3.connect("../../dataset/recommandations.db")
         cursorl = connl.cursor()
-        cursorl.execute("CREATE TABLE IF NOT EXISTS recommendations (steamID INTEGER, recommended_games TEXT)")
+        cursorl.execute("CREATE TABLE IF NOT EXISTS recommandations (steamID INTEGER, recommended_games TEXT)")
         
-        for steamID, recommended_games in recommendations:
-            cursorl.execute("INSERT INTO recommendations (steamID, recommended_games) VALUES (?, ?)",
+        for steamID, recommended_games in recommandations:
+            cursorl.execute("INSERT INTO recommandations (steamID, recommended_games) VALUES (?, ?)",
                         (steamID, ",".join(map(str, recommended_games))))
         
         connl.commit()
         connl.close()
 
-    spark = SparkSession.builder.appName("recommendation")\
+    spark = SparkSession.builder.appName("recommandation")\
         .config("spark.driver.memory", "4g")\
         .config("spark.executor.memory", "4g")\
         .getOrCreate()
@@ -220,17 +220,17 @@ if __name__ == "__main__":
     from __init__ import benchmark
 
     if len(sys.argv) < 2:
-        print("Usage: python recommendation.py <popularity|user_specific>\n Defaulting to popularity")
-    
-    if sys.argv[1] == "user_specific":
-        benchmark(lambda: user_specific_recommendation(), setSpark=False)
+        print("Usage: python recommandation.py <popularity|user_specific>")
     else:
-        benchmark(lambda: popularity_ranking(), setSpark=False)
+        if sys.argv[1] == "user_specific":
+            benchmark(lambda: user_specific_recommandation(), setSpark=False)
+        else:
+            benchmark(lambda: popularity_ranking(), setSpark=False)
     
     # lire les recommandations
-    conn = sqlite3.connect("../../dataset/recommendations.db")
+    conn = sqlite3.connect("../../dataset/recommandations.db")
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM recommendations LIMIT 100")
+    cursor.execute("SELECT * FROM recommandations LIMIT 100")
     print(cursor.fetchall())
     conn.close()
 

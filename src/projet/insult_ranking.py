@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     filetype = "parquet"
     if len(sys.argv) < 3:
-        print("Usage: python script.py <csv|parquet> <map_reduce|spark>\n Defaulting to parquet spark")
+        print("Usage: python script.py <csv|parquet> <map_reduce|spark>")
     else :
         if sys.argv[1] == "csv":
             filetype = "csv"

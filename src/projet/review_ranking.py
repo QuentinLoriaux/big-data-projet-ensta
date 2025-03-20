@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     filetype = "parquet"
     if len(sys.argv) < 3:
-        print("Usage: python script.py <csv|parquet> <naive|token>\n Defaulting to parquet token aware")
+        print("Usage: python script.py <csv|parquet> <naive|token>")
     else :
         if sys.argv[1] == "csv":
             filetype = "csv"
