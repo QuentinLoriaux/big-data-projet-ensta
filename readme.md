@@ -49,7 +49,21 @@ python review_ranking.py csv
 python insult_ranking.py parquet 
 ```
 
-- Pour exécuter des tests généraux avec prompts : lancer `python ./src/main.py`
+## Description des fonctions
+Les fonctions utilisées sont celles de src/projet.
+Ces fonctions sont issues de celles présentes dans src/test, qui sont des versions non optimisées.
+
+\__init__.py crée la fonction benchmark, qui crée la fonction benchmark permettant d'évaluer la durée d'exécution des différentes fonctions.
+
+benchmark.sh génère 20 tests pour chaque fonctions de insult_ranking et review_ranking en csv et en parquet.
+
+ingest.py convertie un fichier csv en fichier parquet.
+
+insult_ranking.py génère un classement des insultes les plus fréquemment untilisées dans les revues steam, par un map_reduce ou par spark.
+
+recommandation.py génère une liste de jeux recommandés pour les utilisateurs, par un classement de popularité des jeux (méthode de recommandation non ciblée) ou en utilisant les jeux les plus fréquents des listes d'amis des utilisateurs (méthode de recommandation ciblée).
+
+review_ranking.py génère un classement des jeux par popularité, par une méthode naive et une méthode enregistrant les tokens pour optimiser le temps de recherche.
 
 ## Expériences
 
@@ -82,12 +96,13 @@ Architecture: x86-64
 Firmware Version: F.32
 
 Durée exacte pour créer sparksession
-| Méthode                          | Parquet    | CSV     |
+| Méthode                          | Parquet   |  CSV     |
 |----------------------------------|-----------|----------|
 | Naive Notation (sans cache)      | 1.90512   | 7.5393   |
 | Naive Notation (cache)           | 0.446794  | 4.55309  |
 | Token Aware Notation (sans cache)| 1.98296   | 7.67941  |
 | Token Aware Notation (cache)     | 0.452767  | 4.632418 |
+|----------------------------------|-----------|----------|
 | Spark Insult (sans cache)        | 1.989475  | 7.66823  |
 | Spark Insult (cache)             | 0.482833  | 4.526515 |
 | Map Reduce Insult (sans cache)   | 48.975855 | 55.54424 |
@@ -108,8 +123,15 @@ En théorie, en réduisant le batch size et en augmentant le nombre de partition
 
 ### Interprétations
 
+On remarque d'abord, comme prévu, que les fichiers parquet sont bien plus optimisés pour un traitement rapide de la donnée que les fichiers csv, et ce dans tous les cas.
 
+Ensuite, la méthode avec map reduce est bien plus lente que la méthode simple avec spark pour le traitement des insultes.
+
+Enfin, pour la recommandation de jeux, la méthode personnalisée pour chaque utilisateur est bien plus couteuse que la méthode de recommandation basée sur la popularité des jeux, ce qui explique que cette dernière fonctionnalité est bien plus souvent utilisée.
+
+Dans tous les cas, l'utilisation du cache rend l'exécution plus rapide, on en déduit que c'est une fonctionnalité utilisée de base par les fonctions utilisées, même si on ne le force pas, ce qui peut expliquer la proximité de résultats pour le classement par jeux entre l'approche naive et l'approche avec mémorisation des token.
 
 ## Pistes pour de futures avancées
 
-toto
+- Optimisation des recommandations de jeux par utilisateurs
+- Benchmark plus complet des fonctions de recommandation
