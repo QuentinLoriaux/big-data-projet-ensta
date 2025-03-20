@@ -42,12 +42,12 @@ cd ..
 
 - De même, télécharger et désarchiver dans `dataset` les autres datasets.
 
-- Pour les tests unitaires, aller dans `./src/projet` et faire `python <fichier>.py <typeFichier>`, par exemple :
+- Pour les tests unitaires, aller dans `./src/projet` et faire `python <fichier>.py <typeFichier> <option>`, par exemple :
 
 ```
 python review_ranking.py csv naive
 python insult_ranking.py parquet map_reduce 
-python recommendation user_specific
+python recommandation user_specific      (sans type de fichier)
 ```
 
 ## Description des fonctions
