@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RES=../../resultat.txt
-echo "Benchmarking insult_ranking.py" >> $RES
+echo "Benchmarking insult_ranking.py" > $RES
 
 echo "spark" >> $RES
 echo "parquet" >> $RES

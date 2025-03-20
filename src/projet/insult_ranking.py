@@ -62,6 +62,14 @@ if __name__ == "__main__":
             filetype = "csv"
         if sys.argv[2] == "map_reduce":
             benchmark(lambda: map_reduce_insult(filetype))
+            benchmark(lambda: map_reduce_insult(filetype))
+            benchmark(lambda: map_reduce_insult(filetype))
+            benchmark(lambda: map_reduce_insult(filetype))
+            benchmark(lambda: map_reduce_insult(filetype))
         else:
+            benchmark(lambda: spark_insult(filetype))
+            benchmark(lambda: spark_insult(filetype))
+            benchmark(lambda: spark_insult(filetype))
+            benchmark(lambda: spark_insult(filetype))
             benchmark(lambda: spark_insult(filetype))
 

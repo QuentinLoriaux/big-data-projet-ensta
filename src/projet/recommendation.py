@@ -220,8 +220,8 @@ if __name__ == "__main__":
 
 
 
-    # benchmark(lambda: popularity_ranking(), setSpark=False)
-    benchmark(lambda: user_specific_recommendation(), setSpark=False)
+    benchmark(lambda: popularity_ranking(), setSpark=False)
+    # benchmark(lambda: user_specific_recommendation(), setSpark=False)
 
     # lire les recommandations
     conn = sqlite3.connect("../../dataset/recommendations.db")

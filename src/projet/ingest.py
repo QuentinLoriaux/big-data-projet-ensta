@@ -79,7 +79,10 @@ def ingest_steam_users(sqlite_path=usr_sqlite_path, parquet_path=usr_parquet_pat
 
     spark.stop()
 
-# if __name__ == "__main__":
-#     ingest_steam_reviews(rev_csv_path, rev_parquet_path)
-#     ingest_steam_users(usr_sqlite_path, usr_parquet_path)
+if __name__ == "__main__":
+    from __init__ import benchmark
+    # ingest_steam_reviews(rev_csv_path, rev_parquet_path)
+    # ingest_steam_users(usr_sqlite_path, usr_parquet_path)
+
+    benchmark(lambda: ingest_steam_reviews(), setSpark=False)
     

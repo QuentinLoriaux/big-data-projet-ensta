@@ -81,30 +81,29 @@ Kernel : Linux 6.12.13-amd64
 Architecture: x86-64
 Firmware Version: F.32
 
-Durée exacte de créer sparksession
-Faire un tableau
-                                    Parquet         CSV
-naive notation (sans cache)  ~2s  ~7s
-naive notation (Cache)
-token aware notation (sans cache) ~ 2s ~ 7s
-token aware notation (cache)
-(décroit énormément quand fait deux fois d'affilé, ~ 0.1 - 0.2s / ~3.5s  pour la deuxième)
+Durée exacte pour créer sparksession
+| Méthode                          | Parquet    | CSV     |
+|----------------------------------|-----------|----------|
+| Naive Notation (sans cache)      | 1.90512   | 7.5393   |
+| Naive Notation (cache)           | 0.446794  | 4.55309  |
+| Token Aware Notation (sans cache)| 1.98296   | 7.67941  |
+| Token Aware Notation (cache)     | 0.452767  | 4.632418 |
+| Spark Insult (sans cache)        | 1.989475  | 7.66823  |
+| Spark Insult (cache)             | 0.482833  | 4.526515 |
+| Map Reduce Insult (sans cache)   | 48.975855 | 55.54424 |
+| Map Reduce Insult (cache)        | 45.427083 | 51.254813|
 
-spark insult (sans cache) ~2s ~ 7s
-spark insult (cache)
-map reduce insult (sans cache) ~46s ~52s
-map reduce insult (cache)
+données calculées en moyenne sur 20 échantillons
 
+
+ingest : 15.2977
 
 On prend soin de vider autant que possible la mémoire pour ne pas crash pour les recommandations
 
-Autre tableau
-                            batch size = 10 000, partition_nb = 10          batch size = ?, partition_nb = ?
-global recsys 
-user_specific recsys
+global recsys 69.0930 (batch size = 10000, nombre de partition = 10)
+user_specific recsys 627.6861 (batch size = 500, nombre de partition = 200)
 
-
-
+En théorie, en réduisant le batch size et en augmentant le nombre de partition, on devrait obtenir une exécution plus rapide. Cependant, mon ordinateur n'est pas assez puissant pour faire tourner des simulations en augmentant le nombre de partition.
 
 
 ### Interprétations
