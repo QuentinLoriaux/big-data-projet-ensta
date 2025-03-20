@@ -1,3 +1,4 @@
+import sys
 import sqlite3
 from pyspark import SparkContext
 from pyspark.sql import SparkSession
@@ -218,11 +219,14 @@ def user_specific_recommendation(batch_size=500, partition_number=200):
 if __name__ == "__main__":
     from __init__ import benchmark
 
-
-
-    benchmark(lambda: popularity_ranking(), setSpark=False)
-    # benchmark(lambda: user_specific_recommendation(), setSpark=False)
-
+    if len(sys.argv) < 2:
+        print("Usage: python recommendation.py <popularity|user_specific>\n Defaulting to popularity")
+    
+    if sys.argv[1] == "user_specific":
+        benchmark(lambda: user_specific_recommendation(), setSpark=False)
+    else:
+        benchmark(lambda: popularity_ranking(), setSpark=False)
+    
     # lire les recommandations
     conn = sqlite3.connect("../../dataset/recommendations.db")
     cursor = conn.cursor()

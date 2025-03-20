@@ -55,16 +55,16 @@ if __name__ == "__main__":
             filetype = "csv"
         if sys.argv[2] == "naive":
             benchmark(lambda: naive_notation(filetype))
-            benchmark(lambda: naive_notation(filetype))
-            benchmark(lambda: naive_notation(filetype))
-            benchmark(lambda: naive_notation(filetype))
-            benchmark(lambda: naive_notation(filetype))
+            # benchmark(lambda: naive_notation(filetype))
+            # benchmark(lambda: naive_notation(filetype))
+            # benchmark(lambda: naive_notation(filetype))
+            # benchmark(lambda: naive_notation(filetype))
         else:
             benchmark(lambda: token_aware_notation(filetype))
-            benchmark(lambda: token_aware_notation(filetype))
-            benchmark(lambda: token_aware_notation(filetype))
-            benchmark(lambda: token_aware_notation(filetype))
-            benchmark(lambda: token_aware_notation(filetype))
+            # benchmark(lambda: token_aware_notation(filetype))
+            # benchmark(lambda: token_aware_notation(filetype))
+            # benchmark(lambda: token_aware_notation(filetype))
+            # benchmark(lambda: token_aware_notation(filetype))
 
 
     # benchmark(lambda: naive_notation(filetype), setSpark=True)

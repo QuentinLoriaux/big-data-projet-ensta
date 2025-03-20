@@ -45,8 +45,9 @@ cd ..
 - Pour les tests unitaires, aller dans `./src/projet` et faire `python <fichier>.py <typeFichier>`, par exemple :
 
 ```
-python review_ranking.py csv
-python insult_ranking.py parquet 
+python review_ranking.py csv naive
+python insult_ranking.py parquet map_reduce 
+python recommendation user_specific
 ```
 
 ## Description des fonctions
