@@ -1,3 +1,4 @@
+import sys
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType
 import sqlite3
@@ -80,9 +81,13 @@ def ingest_steam_users(sqlite_path=usr_sqlite_path, parquet_path=usr_parquet_pat
     spark.stop()
 
 if __name__ == "__main__":
-    from __init__ import benchmark
-    # ingest_steam_reviews(rev_csv_path, rev_parquet_path)
-    # ingest_steam_users(usr_sqlite_path, usr_parquet_path)
-
-    benchmark(lambda: ingest_steam_reviews(), setSpark=False)
+    if len(sys.argv) > 1:
+        print("Usage: python ingest.py <benchmark|convert>")
+        sys.exit(1)
+    if sys.argv[1] == "convert":
+        ingest_steam_reviews(rev_csv_path, rev_parquet_path)
+        ingest_steam_users(usr_sqlite_path, usr_parquet_path)
+    else:
+        from __init__ import benchmark
+        benchmark(lambda: ingest_steam_reviews(), setSpark=False)
     

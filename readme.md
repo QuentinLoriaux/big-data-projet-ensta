@@ -40,7 +40,7 @@ cd ..
 
 ```
 
-- De même, télécharger et désarchiver dans `dataset` les autres datasets.
+- De même, télécharger et désarchiver dans `dataset` les autres datasets, puis générer les versions parquet à partir du csv : ./src/projet/ ingest.py convert
 
 - Pour les tests unitaires, aller dans `./src/projet` et faire `python <fichier>.py <typeFichier> <option>`, par exemple :
 
